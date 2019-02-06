@@ -3,8 +3,6 @@ from django.urls import include, path, re_path
 from rest_framework import routers
 from users import views
 
-from pages.views import FrontendRenderView
-
 router = routers.DefaultRouter()
 # router.register(r'movies', views.MovieViewSet)
 

@@ -1,16 +1,7 @@
-.login-background {
-  background-color: white;
+.sign-in-btn {
+  font-size: 1.2em;
 }
 
-h2 {
-  color: #419873;
-  font-size: 1em;
-}
-
-.login-container {
-  border-radius: 10px;
-  margin: 50%;
-  width: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 1em;
+.register-txt {
+  color: white;
 }
