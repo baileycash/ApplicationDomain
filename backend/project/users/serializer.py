@@ -4,7 +4,13 @@ from rest_framework import serializers
 
 # class UserCreateSerializer()
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ('id', 'name',)
+
+class UserSerializer(serializers.ModelSerializer):
+    groups = GroupSerializer(many=True)
     class Meta:
         model = User
         fields = ('id', 'username', 'email', 'password', 'groups', 'last_login', 'is_active')
@@ -13,9 +19,3 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         return user
-
-
-class GroupSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Group
-        fields = ('id', 'name',)

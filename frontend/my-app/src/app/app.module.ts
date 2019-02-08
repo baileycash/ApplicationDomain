@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ChartOfAccountsComponent } from './chart-of-accounts/chart-of-accounts.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChartOfAccountsComponent } from './chart-of-accounts/chart-of-accounts.
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    ChartOfAccountsComponent
+    ChartOfAccountsComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

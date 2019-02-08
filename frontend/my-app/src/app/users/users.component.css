@@ -1,0 +1,33 @@
+h2 {
+  color: #3B8492;
+}
+
+.new-btn {
+  margin-top: 30px;
+  padding-top: 1em;
+}
+
+.edit-btn {
+  width: auto;
+  margin-left: .5em;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+.users-header {
+  float: auto;
+  padding-top: 22px;
+  padding-right: 4em;
+  /* background-color: blue; */
+}
+
+.search-bar {
+  margin-top: 30px;
+  float: right;
+  /* background-color: pink; */
+  padding-top: 1em;
+}
+
+.table {
+  max-width: 1800px;
+}
